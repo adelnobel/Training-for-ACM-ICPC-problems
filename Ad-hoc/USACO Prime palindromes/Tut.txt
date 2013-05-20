@@ -1,0 +1,4 @@
+Generate all palindromes and then check if everyone is prime or not
+
+we have 8 digits and each one has 10 possible state (0 or 1 or 2 .... 9 AND EMPTY! empty is also a state, a digit may not exist in that position, so we consider 10 as the empty mark and check each time if its 10 so we can ignore the digit)
+

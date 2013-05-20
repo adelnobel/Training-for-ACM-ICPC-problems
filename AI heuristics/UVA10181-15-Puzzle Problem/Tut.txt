@@ -1,0 +1,4 @@
+Please see te solvability for n-Puzzles tutorial in tutorails folder
+
+Also on
+http://www.cs.bham.ac.uk/~mdr/teaching/modules04/java2/TilesSolvability.html

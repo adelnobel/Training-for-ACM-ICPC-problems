@@ -1,0 +1,3 @@
+Prim Algorithm for minimum spanning trees
+
+http://www.spoj.pl/problems/CSTREET/

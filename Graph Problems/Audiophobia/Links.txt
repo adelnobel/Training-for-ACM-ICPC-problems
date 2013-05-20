@@ -1,0 +1,6 @@
+This is a Minimax problem, one of warshall's algorithms applications
+
+http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=989
+
+
+Check folder, E:\My files\Programs & Tutorials & Scripts Made By Me\Graphs in C++\Floyd Warshal and its applications

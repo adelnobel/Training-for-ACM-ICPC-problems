@@ -1,0 +1,2 @@
+This is the famous Knapsack problem
+http://www.spoj.pl/problems/KNAPSACK/

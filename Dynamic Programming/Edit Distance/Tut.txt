@@ -1,0 +1,27 @@
+Video of the tutorial
+http://www.youtube.com/watch?v=CB425OsE4Fo
+
+Problem on SPOJ
+http://www.spoj.pl/problems/EDIST/
+
+
+My explanation
+
+This is a dynamic programming problem
+First, we start with 2 strings, we pad each string from the left by a space ' '
+so str1[0] = str2[0] = ' '
+
+And then we initialize our 2D Array with edit distances values
+
+What we know initially is, the edit distance between the first character of each string and the other string
+the first character is the empty character (e epsilon)
+
+so we initialize the first row and the first column with edit distances values (See the image)
+
+And then; we loop for each row and initialize the value of each cell according to this equation
+
+arr[a][b] = min( arr[a-1][b] + 1 , min( arr[a][b-1]+1, arr[a-1][b-1] + (str1[a] != str2[b] ) )
+
+The expression (str1[a] != str2[b] ) will be equal to 1 if str1[a] DOESN'T EQUAL str2[b]
+And hence we need to add cost 1, because there is a change
+On the other hand, if str1[a] EQUALS str2[b] then the expression will evaluate to 0 (We don't need to make a change since they are equal)

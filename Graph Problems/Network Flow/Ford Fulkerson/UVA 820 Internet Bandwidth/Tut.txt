@@ -1,0 +1,5 @@
+http://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=761
+
+Finally I learned the ford fulkerson algorith for max flow
+Thanks to Allah and then to Gusfield, algo course for graduates
+E:\My files\Programs & Tutorials & Scripts Made By Me\C++\Tutorials\UCDAVIS CS222A Graduate Algorithms

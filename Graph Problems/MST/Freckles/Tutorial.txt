@@ -1,0 +1,6 @@
+This is (Minimum spanning tree problem) it also involves the Euclidean distance algorithm
+We use Prim's algorithm for finding the minimum spanning tree
+
+http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=975
+
+http://en.wikipedia.org/wiki/Prim%27s_algorithm
