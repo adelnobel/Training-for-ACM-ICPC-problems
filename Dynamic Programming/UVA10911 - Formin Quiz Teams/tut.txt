@@ -1,0 +1,3 @@
+Dynamic Programming with bitmasking
+
+From steven halim's book

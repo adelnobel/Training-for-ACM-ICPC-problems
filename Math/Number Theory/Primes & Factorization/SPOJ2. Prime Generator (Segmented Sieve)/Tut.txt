@@ -1,0 +1,11 @@
+Segmented Sieve, to find primes in interval!
+
+http://apps.topcoder.com/forums/;jsessionid=D277FB5D7B61B1473775DB9947B6126C?module=Thread&threadID=716232&start=0&mc=3#1408063
+
+Segmented sieve of Eratosthenes used to find primes in range [a, b]
+
+Steps
+1- find all the primes up to sqrt(b), call them primes[]
+2- create a boolean array is_prime[] with length = b-a+1 and fill it with true
+3- for each p in primes set is_prime[i*p - a] = false starting at i=ceil(a/p)
+4- for each is_prime[i]=true print i+a

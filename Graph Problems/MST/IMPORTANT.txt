@@ -1,0 +1,5 @@
+NEVER PUSH ALL THE EDGES ON THE PRIORITY QUEUE AND THEN TAKE THE ONE WITH THE MINIMAL COST EACH TIME!! THIS WILL RESULT IN A WRONG ANSWER!
+
+First Push a random node and push all the out edges from it then take the least out edge going from it, and then Check the distination of that edge and push the out edges and take the less
+Keep marked boolean array to mark the already visuited nodes so we don't visit again
+And keep totalVisited = 0 initially and increase each time, when it == the total number of nodes then break

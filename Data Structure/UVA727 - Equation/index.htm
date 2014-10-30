@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>Infix to Postfix Conversion</title>
+<style type="text/css">
+.header{font-family:verdana,arial,helvetica; font-weight:bold; font-size:25pt; color:#EFEFF5; filter:DropShadow(color=#666699, offX=2, offY=2, positive=1); width:100%}
+.link{color:#003366; font-weight:bold}
+.link:hover{color:#666699; font-weight:bold}
+.link2{color:#EFEFF5}
+.link2:hover{color:#CCCCDD}
+</style>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table align="center" bgcolor="#003366" cellpadding="0" cellspacing="0" width="596"><tbody><tr><td></td></tr></tbody></table>
+<table align="center" bgcolor="#003366" cellpadding="0" cellspacing="0" width="598"><tbody><tr><td></td></tr></tbody></table>
+<table align="center" bgcolor="#003366" cellpadding="2" cellspacing="0" width="600"><tbody><tr><td>
+ <table bgcolor="#003366" height="50" width="100%"><tbody><tr><td><span class="header">Infix - Postfix</span></td></tr></tbody></table>
+ <table bgcolor="#EFEFF5" width="100%"><tbody><tr><td>
+ <font color="#000000" face="verdana,arial,helvetica" size="-1">
+ <br>
+ <b>Infix Expression :</b>
+ <br><br>Any expression in the standard form like "2*3-4/5" is an Infix(Inorder) expression.<br><br>
+ <b>Postfix Expression :</b>
+ <br><br>The Postfix(Postorder) form of the above expression is "23*45/-".<br><br>
+ <b>Infix to Postfix Conversion :</b>
+ <br><br>In normal algebra we use the infix notation like a+b*c. The 
+corresponding postfix notation is abc*+. The algorithm for the 
+conversion is as follows :
+ <ul type="square">
+    <li>Scan the <code><font size="2">Infix string</font></code> from left to right.</li>
+    <li>Initialise an empty stack.</li>
+    <li>If the scannned character is an operand, add it to the <code><font size="2">Postfix string</font></code>. If the scanned character is an operator and if the <code><font size="2">stack</font></code> is empty <code><font size="2">Push</font></code> the character to <code><font size="2">stack</font></code>.<ul><li>If the scanned character is an Operand and the <code><font size="2">stack</font></code> is not empty, compare the precedence of the character with the element on top of the <code><font size="2">stack</font></code> (<code><font size="2">topStack</font></code>). If <code><font size="2">topStack</font></code> has higher precedence over the scanned character <code><font size="2">Pop</font></code> the stack else <code><font size="2">Push</font></code> the scanned character to <code><font size="2">stack</font></code>. Repeat this step as long as <code><font size="2">stack</font></code> is not empty and <code><font size="2">topStack</font></code> has precedence over the character.</li></ul>Repeat this step till all the characters are scanned.</li>
+    <li>(After all characters are scanned, we have to add any character that the <code><font size="2">stack</font></code> may have to the <code><font size="2">Postfix string</font></code>.) If <code><font size="2">stack</font></code> is not empty add <code><font size="2">topStack</font></code> to <code><font size="2">Postfix string</font></code> and <code><font size="2">Pop</font></code> the <code><font size="2">stack</font></code>. Repeat this step as long as stack is not empty.</li>
+    <li>Return the <code><font size="2">Postfix string</font></code>.
+ </li></ul>
+ <b>Example :</b>
+ <br><br>Let us see how the above algorithm will be imlemented using an example.
+ <br><br>Infix String : a+b*c-d
+ <br><br>Initially the Stack is empty and our Postfix string has no 
+characters. Now, the first character scanned is 'a'. 'a' is added to the
+ Postfix string. The next character scanned is '+'. It being an 
+operator, it is pushed to the stack.
+ <br><br><table align="center" width="400"><tbody><tr><td align="center"><img src="index_files/img1.gif"><br><font size="-2"><b>Stack</b></font></td><td align="center"><img src="index_files/img2.gif"><br><font size="-2"><b>Postfix String</b></font></td></tr></tbody></table>
+ <br>Next character scanned is 'b' which will be placed in the Postfix 
+string. Next character is '*' which is an operator. Now, the top element
+ of the stack is '+' which has lower precedence than '*', so '*' will be
+ pushed to the stack.
+ <br><br><table align="center" width="400"><tbody><tr><td align="center"><img src="index_files/img3.gif"><br><font size="-2"><b>Stack</b></font></td><td align="center"><img src="index_files/img4.gif"><br><font size="-2"><b>Postfix String</b></font></td></tr></tbody></table>
+ <br>The next character is 'c' which is placed in the Postfix string. 
+Next character scanned is '-'. The topmost character in the stack is '*'
+ which has a higher precedence than '-'. Thus '*' will be popped out 
+from the stack and added to the Postfix string. Even now the stack is 
+not empty. Now the topmost element of the stack is '+' which has equal 
+priority to '-'. So pop the '+' from the stack and add it to the Postfix
+ string. The '-' will be pushed to the stack.
+ <br><br><table align="center" width="400"><tbody><tr><td align="center"><img src="index_files/img5.gif"><br><font size="-2"><b>Stack</b></font></td><td align="center"><img src="index_files/img6.gif"><br><font size="-2"><b>Postfix String</b></font></td></tr></tbody></table>
+ <br>Next character is 'd' which is added to Postfix string. Now all 
+characters have been scanned so we must pop the remaining elements from 
+the stack and add it to the Postfix string. At this stage we have only a
+ '-' in the stack. It is popped out and added to the Postfix string. So,
+ after all characters are scanned, this is how the stack and Postfix 
+string will be :
+ <br><br><table align="center" width="400"><tbody><tr><td align="center"><img src="index_files/img7.gif"><br><font size="-2"><b>Stack</b></font></td><td align="center"><img src="index_files/img8.gif"><br><font size="-2"><b>Postfix String</b></font></td></tr></tbody></table>
+ <br>End result :<ul><li>Infix String : a+b*c-d</li><li>Postfix String : abc*+d-</li></ul>
+ </font>
+ </td></tr></tbody></table>
+<table align="center" bgcolor="#003366" cellpadding="0" cellspacing="0" height="2" width="100%"><tbody><tr><td></td></tr></tbody></table>
+ <table bgcolor="#003366" width="100%"><tbody><tr><td><font color="#EFEFF5" face="verdana,arial,helvetica" size="-1">© 2002 <a href="http://www.qiksearch.com/" class="link2" title="Click here to visit Qiksearch.com">Premshree Pillai</a>.</font></td></tr></tbody></table>
+</td></tr></tbody></table>
+<table align="center" bgcolor="#003366" cellpadding="0" cellspacing="0" width="598"><tbody><tr><td></td></tr></tbody></table>
+<table align="center" bgcolor="#003366" cellpadding="0" cellspacing="0" width="596"><tbody><tr><td></td></tr></tbody></table>
+
+
+
+</body></html>

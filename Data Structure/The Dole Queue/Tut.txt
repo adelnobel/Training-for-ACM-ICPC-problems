@@ -1,0 +1,5 @@
+Implemented using a circular doubly linked list
+
+WARNING!
+This code doesn't delete the pointers!
+

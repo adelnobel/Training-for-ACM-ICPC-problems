@@ -1,0 +1,16 @@
+Okay I learned a lesson
+
+whenever you see in the problem that the order of operations DOESN'T matter => Think about generating all subsets with bitmask or nested loops 
+
+Also: when doing an operation particular times gets it back to the initial state (Like the % operator)
+Then we don't need to do it all these times
+
+In this problem, if you do a move 4 times, it gets back to the start state
+Therefore
+we have 9 moves, and each can be done 0 or 1 or 2 or 3 times (Total of 4 (0, 1 , 2 , 3 ) if we do more we will get back to the same state as 0 )
+
+the complexity is 4^9
+
+for(0 =>4)
+  for(0=>4)
+   .... repeated (9 loops in total each loop for 1 move, and each loop executes the move 0 to 3 times ((Observation: if we execute a move 4 times then it will get us back to the same as executing it 0 times ))

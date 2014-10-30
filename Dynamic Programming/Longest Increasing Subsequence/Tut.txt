@@ -1,0 +1,2 @@
+Longest Increasing Subsequence
+http://www.spoj.pl/problems/ELIS/

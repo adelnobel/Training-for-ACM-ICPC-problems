@@ -1,0 +1,46 @@
+First, we can decompose the formula from
+(sqrt(a) + sqrt(b))^2
+
+Into
+
+a + 2*sqrt(a*b) + b  //The famous rule! („—»⁄ «·«Ê·° „—»⁄ «· «‰Ì° 2 ›Ì «·«Ê· ›Ì «· «‰Ì)
+
+And then, what we need now is to find a value of a * b which is a square number!!
+Meaning that if we take the square root of a*b we will get an integral value!! like 9, 25, 36, 49, etc...
+These values only will guarantee an integral value as the result, because all other parts of the equations are integers!
+
+Tip: a number is a square number, if each factor of its prime factors occurs EVEN times!!
+
+Like 2 * 2 = 4 square number!
+
+3 * 3 = 9, square number!
+
+2 * 2 * 3 * 3 = 36 square number!!
+
+now what we can do is to loop through all values of M
+And for each value, we factorize it, and count how many times a factor occurs, if a factor occurs ODD times, then we need to balance this!
+
+We want to get the twin of this number, a twin number is the number that when multiplied by the number results in a new number that has all
+factors of the old number balanced!!
+
+Example:
+2 * 3 = 6
+twin that balances the factors is 2 * 3
+now we have  2 * 2 * 3 * 3 = 36 square number!
+
+Example:
+
+2 * 5 * 5  = 50
+The twin will be 2 = 2
+now we have 2 * 2 * 5 * 5 = 100 square number!
+
+after we get the twin, we can make a loop over all square numbers UNDER N
+
+we make a loop of j = 1; j * j <= N;
+
+All these numbers are square numbers!! and can be added to the original value without any errors! because when we multiply original
+i * twin * j*j we will surely get a square number whose factors are balanced!!
+
+we check for each j*j * twin if its <= N, then we increment the counter
+If bigger we break the inside loop!
+

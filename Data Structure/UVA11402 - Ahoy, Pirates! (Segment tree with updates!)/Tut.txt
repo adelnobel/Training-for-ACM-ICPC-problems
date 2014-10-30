@@ -1,0 +1,4 @@
+Propagation is simply to update the range only and keep a flag, and when you update or query childs of a range that has a flag,
+Process the flag operation first and then return the value, so it has the correct value
+
+This is called Lazy Propagation, as we update only when we need the value!

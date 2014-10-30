@@ -1,0 +1,5 @@
+Bytelandian gold coins
+
+Dynamic Programming
+
+http://www.spoj.pl/problems/COINS/
