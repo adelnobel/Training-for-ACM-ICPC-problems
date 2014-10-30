@@ -9,13 +9,13 @@ Problems that involve multiple topics may be found in any of them. Most problems
 
 #####Online judges include:#####
 
-* **ICPC Live Archive [LA]**
-* **UVA Online Judge [UVA]**
-* **Spoj [spoj]**
-* **TopCoder [topcoder]**
-* **Codeforces [topcoder]**
+* [ICPC Live Archive [LA]](https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_authorstats&userid=40294)
+* [UVA Online Judge [UVA]](http://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_authorstats&userid=174753)
+* [Spoj [spoj]](http://www.spoj.com/users/adelnobel/)
+* [TopCoder [topcoder]](http://community.topcoder.com/tc?module=MemberProfile&cr=23069000)
+* [Codeforces [codeforces]](http://www.codeforces.com/profile/adelnobel)
 
-Most of codeforces solutions are not present here because codeforces already keeps track of them. Find my account on codeforces ***adelnobel***
+Most of codeforces solutions are not present here because codeforces already keeps track of them. Find my account on online judge listed above by clicking its link.
 
 
 License
