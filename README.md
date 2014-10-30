@@ -6,11 +6,11 @@ This repository contains source codes for most of the problems I solved on onlin
 
 Online judges include
 
-* ####ICPC Live Archive [LA]
-* ####UVA Online Judge [UVA]
-* ####Spoj [spoj]
-* ####TopCoder [topcoder]
-* ####Codeforces [topcoder]
+* #ICPC Live Archive [LA]
+* #UVA Online Judge [UVA]
+* #Spoj [spoj]
+* #TopCoder [topcoder]
+* #Codeforces [topcoder]
 
 Most of codeforces solutions are not present here because codeforces already keeps track of them. Find my account on codeforces ***adelnobel***
 
